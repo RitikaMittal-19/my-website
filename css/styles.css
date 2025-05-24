@@ -1,0 +1,95 @@
+body{
+    
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather',serif;
+    color: rgb(57, 45, 137);
+    color: black;
+    font-size: 15px;
+}
+.top{
+    background-color: slateblue;
+    background-color: black;
+    padding-top: 200px;
+    position: relative;
+    height: 500px;
+}
+h1{
+    color: azure;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Sacramento', cursive;
+}
+.name{
+    color: azure;
+font-size: 20px;
+}
+.web{
+    text-decoration: white underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.web:hover{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.cloudtop{
+position: absolute;
+left: 65%;
+top: 100px;
+width: 100px;
+height: 100px;
+}
+.cloudbottom{
+position: absolute;
+left: 30%;
+top: 450px;
+width: 100px;
+height: 100px;
+}
+.middle-container{
+background-color: azure;
+position: relative;
+}
+.bottom-container{
+background-color: slateblue;
+background-color: black;
+padding: 20px 0 10px;
+}
+.camera{
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+    
+}
+.camera2{
+    width: 200px;
+    height: 250px;
+    float: right;
+    margin-left: 30px;
+    
+}
+.cook{
+    width: 200px;
+   
+    float: left;
+    margin-right: 30px;
+}
+.skill-row{
+    text-align: left;
+    width: 50%;
+    margin: 100px auto 100px;
+}
+h2{
+    color: rgb(114, 12, 48);
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    color: rgb(228, 51, 113);
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: azure;
+    margin: 0 10px 0;
+}
