@@ -12,7 +12,14 @@ body{
     background-color: black;
     padding-top: 200px;
     position: relative;
-    height: 500px;
+    height: 600px;
+}
+.top2{
+    background-color: slateblue;
+    background-color: black;
+    padding-top: 200px;
+    position: relative;
+    height: 100%;
 }
 h1{
     color: azure;
@@ -93,3 +100,78 @@ a{
     color: azure;
     margin: 0 10px 0;
 }
+/* === Portfolio Section Styles === */
+.portfolio-container {
+    background-color: black;
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all .project-card sections horizontally */
+  gap: 40px; /* Optional: spacing between cards */
+  padding: 40px 0;
+  }
+  
+  .project-card {
+    position: sticky;
+    top: 15%;
+    width: 70%;
+    height: 80vh;
+    padding: 30px;
+    background-color: #1a1a1a;
+    
+    margin-bottom: 20vh;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    color: white;
+  }
+  
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #999;
+  }
+  
+  .client-label {
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
+  
+  .client-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .live-button {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .project-thumbs {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .project-thumbs img {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  

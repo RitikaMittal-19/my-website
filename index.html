@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <title>Ritika </title>
     <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&family=Montserrat:ital,wght@1,300&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
     <style>
+     
+      .icon-stack {
+        display: flex;
+        will-change: transform;
+      }
+
+  @keyframes slide-left {
+  from { transform: translateX(50%); }
+  to { transform: translateX(0%); }
+  }
+
+.scroll-container {
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.image-track {
+  display: flex;
+  height: 100%;
+  will-change: transform;
+  animation: slide-left 5s linear infinite;
+}
+
+.image-track img {
+  padding: 2px;
+  height: 100%;
+  width: auto;
+  flex: 0 0 auto;
+  object-fit: cover;
+}
       .gradient-text {
          background: linear-gradient(90deg, #6414b5, #a232b6);
     
@@ -51,6 +83,29 @@
         background-color: #ddd;
         color: black;
       }
+      .project-section {
+      position: sticky;
+      top: 0;
+      height: 80%;
+      width:80%;
+      
+      font-size: 3rem;
+      color: white;
+      
+    }
+
+    #project1 {
+      
+      background: #95aaa6;
+    }
+
+    #project2 {
+      background: #959596;
+    }
+
+    #project3 {
+      background: #393939;
+    }
     </style>
   </head>
 <body>
@@ -104,8 +159,18 @@
     
       
     
-<br><br>
+    <br><br>
     </div>
+    <div class="scroll-container" >
+     
+      <div class="image-track">
+        <img src="css/image3.jpg" alt="Image 3" />
+        <img src="css/image1.jpg" alt="Image 1" />
+        <img src="css/image4.jpg" alt="Image 4" />
+        <img src="css/image2.jpg" alt="Image 2" />
+      </div>
+    </div>
+
     <div class="hero-section" >
       <div class="hero-text">
         
@@ -120,14 +185,66 @@
 <br><br>
     </div>
     
-    <div class="top">
+    <div class="top" style="height: 200px;">
       <h1>My Projects</h1>
       <p class="name">Explore</p>
   
-<img class="cloudtop" src="https://em-content.zobj.net/source/google/387/cloud_2601-fe0f.png">
-<img class="cloudbottom" src="https://em-content.zobj.net/source/google/387/cloud_2601-fe0f.png">
+      </div>
+      <!-- Portfolio Section Start -->
+<div class="portfolio-container" >
+  <section class="project-card">
+    <div class="project-header">
+      <span class="project-number">01</span>
+      <div>
+        <p class="client-label">Portfolio Website</p>
+        <p class="client-name">A stylish and responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <button class="live-button">LIVE PROJECT</button>
+    </div>
+    <div class="project-thumbs">
+      <img src="css/p22.png" alt="Project Image 2" />
+      <img src="css/p33.png" alt="Project Image 3" />
+      
+      <img src="css/p3.png" alt="Project Image 1" />
+    </div>
+  </section>
+
+  <section class="project-card">
+    <div class="project-header">
+      <span class="project-number">02</span>
+      <div>
+        <p class="client-label">UI Design System</p>
+        <p class="client-name">Designed a component library for consistent UI/UX across all platforms.</p>
+      </div>
+      <button class="live-button">LIVE PROJECT</button>
+    </div>
+    <div class="project-thumbs">
+      <img src="css/image1.jpg" alt="Project Image 1" />
+      <img src="css/image2.jpg" alt="Project Image 2" />
+      <img src="css/image3.jpg" alt="Project Image 3" />
+    </div>
+  </section>
+
+  <section class="project-card">
+    <div class="project-header">
+      <span class="project-number">03</span>
+      <div>
+        <p class="client-label">UX Case Study</p>
+        <p class="client-name">A complete UX redesign process with user research, wireframes, and prototyping.</p>
+      </div>
+      <button class="live-button">LIVE PROJECT</button>
+    </div>
+    <div class="project-thumbs">
+      <img src="css/a1.jpg" alt="Project Image 1" />
+      <img src="css/a2.jpg" alt="Project Image 2" />
+      <img src="css/a3.jpg" alt="Project Image 3" />
+    </div>
+  </section>
 </div>
-  
+<!-- Portfolio Section End -->
+
+</div>
+
   <div class="bottom-container">
     <p style="color: white">You can connect through various ways</p>
         <a style="color: white;" class="btn" href="2023kuec2062@iiitkota.ac.in">CONTACT ME</a><br>
