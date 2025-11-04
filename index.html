@@ -52,10 +52,13 @@
            display: inline-block;
       }
       .navbar {
-          width: 9px;
-        overflow: hidden;
-        background-color: #ffffff;
-      }
+  width: 100%;                  /* full width */
+  background-color: #ffffff;    /* white background */
+  padding: 20px 0;              /* more height */
+  text-align: center;           /* center links */
+  border-bottom: 2px solid #ddd;/* optional subtle line */
+}
+
       .hero-text {
         display: flex;
       flex-direction: column;
@@ -69,23 +72,21 @@
       color: #000000;
     }
       
-      .navbar a {
-        float: none;
-        display: inline;
-        color: rgb(57, 45, 137);;
-       
-        text-align: right;
-        padding: 14px 5px;
-        text-decoration: none;
-        
-        
-      }
-  
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-        font-size: 6rem;
-      }
+     .navbar a {
+  display: inline-block;        /* aligns nicely */
+  color: rgb(57, 45, 137);
+  font-size: 1.25rem;           /* larger text */
+  font-weight: 600;             /* makes it bolder */
+  padding: 14px 20px;           /* more clickable area */
+  text-decoration: none;
+  transition: all 0.3s ease;    /* smooth hover effect */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  font-size: 1.3rem;            /* slightly larger on hover */
+}
       .project-section {
       position: sticky;
       top: 0;
@@ -262,6 +263,7 @@
 </body>
     
 </html>
+
 
 
 
